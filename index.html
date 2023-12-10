@@ -7,8 +7,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>ANTC Hospital | Panipat</title>
-   <meta name="description" content="Freelancer -  Advance Neuro-Spine & Trauma Centre in Model Town, Panipat is one of the most renowned Private Hospitals in the area">
+   <title>Freelancer | Rahul</title>
+   <meta name="description" content="Freelancer -  Rahul" >
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
@@ -39,15 +39,36 @@
 
 <section class="processs" id ="services">
 
-   <h1 class="heading">No Need to remember Payments</h1>
+   <h1 class="heading">Payments Made easy via subscription</h1>
 
    <div class="box-container container">
 
       <div class="box">
          <img src="images/voice.png" alt="">
-         <p>Instagram Shorts With Custom Captions</p>
-         <h3>$99/Two Weeks</h3>
-         <a href="" class="link-btn"><b>Subscribe Now</b></a>
+         <p>E-Commerce Photo Editing</p>
+         <h3>$39/Month</h3>
+         <a href="" class="link-btn"><b><div id="paypal-button-container-P-14L77442NG022235NMVZPFHA"></div>
+            <script src="https://www.paypal.com/sdk/js?client-id=AbpZDyZ9QcpFym667XVcx0zmm4zOrdLVIRnXh2-UAYcKJqeEVIdFumvZaLY7ROUqQwcYDdkncpERkK8R&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+            <script>
+              paypal.Buttons({
+                  style: {
+                      shape: 'rect',
+                      color: 'gold',
+                      layout: 'vertical',
+                      label: 'subscribe'
+                  },
+                  createSubscription: function(data, actions) {
+                    return actions.subscription.create({
+                      /* Creates the subscription */
+                      plan_id: 'P-14L77442NG022235NMVZPFHA'
+                    });
+                  },
+                  onApprove: function(data, actions) {
+                    alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                  }
+              }).render('#paypal-button-container-P-14L77442NG022235NMVZPFHA'); // Renders the PayPal button
+            </script></b></a>
+         
       </div>
 
    </div>
